@@ -1,0 +1,12 @@
+E: Federal and State withholding rates displayed as percentages, but calculated as decimals
+X: Withholding rates display as decimals
+
+S1: Multiply the withholding rate variables by 100 when displaying them
+R1: Withholding rates display as percentages
+
+
+E: All monetary values display to 2 decimal places
+X: Values display with varying decimal places
+
+S1: Use formatted strings
+R1: Monetary values display with the correct number of decimal places
