@@ -1,0 +1,11 @@
+E: Output displays the approximation of pi
+X: Output displays "4.0"
+
+S1: Replace all instances of "1" with "1.0"
+R1: Output displays "2.9760461760461765"
+
+S2: Replace all digits with doubles by adding ".0" to the end
+R2: Output displays "2.9760461760461765"
+
+S3: Type the function into a calculator
+R3: Realize that the output is actually supposed to be "2.9760461760461765"
