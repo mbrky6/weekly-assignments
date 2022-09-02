@@ -1,0 +1,15 @@
+E: Lottery generates a random number, then the user writes a number in.
+X: There are no checks to prevent a user from inputting invalid data.
+
+S1: Just leave it and put a warning because we haven't made it to that part in the book yet.
+R1: I'm being eaten alive inside by the fact that I can't fail-check Java programs yet, but the program still works fine if you input a valid number.
+
+S2: Put a validity check for string length since that's the only issue that actually throws an error.
+R1: Invalid string still crosses through.
+
+
+E: User guesses that are under 3 characters will be denied.
+X: Guess is denied, then the lottery continues and throws an error.
+
+S1: Put the rest of the lottery past the check in an if loop.
+R1: Entries that are too short are denied. Entries that are too long or contain non-numerical characters are still accepted, but these can still be successfully processed. (i.e. typing in 123456780 will only process 123, but won't give an exact match since 1234567890 isn't the same as 123)
