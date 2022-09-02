@@ -1,0 +1,20 @@
+E: Program lists out ASCII characters from ! to ~ with 10 characters per line and 1 space between each character.
+X: Program lists the same character 9 times per line.
+
+S1: Replace nested 'for' loop with an 'if' statement and counter variable (j).
+R1: All characters display on the same line because the counter didn't count.
+
+S2: Replace "j++" with "j += 1".
+R2: Program doesn't recognize the counter.
+
+S3: Remove j from the if statement.
+R3: Nothing changed.
+
+S4: Remove the j declaration from the 'for' loop. (Yeah, that's probably it)
+R4: Only the first line is 10 characters long. All the others are 9.
+
+S5: Replace "(j == 10)" with "(j > 10)".
+R5: The first line is 11 characters now.
+
+S6: Replace "int j = 0" with "int j = 1".
+R6: Character list displays correctly.
