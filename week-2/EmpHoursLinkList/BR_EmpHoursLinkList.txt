@@ -1,0 +1,8 @@
+E: App produces the same results as EmpHoursArray.java.
+X: Employee numbers display 1 less than they should be. (Technically they're right, but I don't believe that zeroth is a thing)
+
+S1: Add 1 to the employee number in the print statement.
+R1: Java complains that I'm adding an integer to an object.
+
+S2: Change l.get(1) to ((Integer) l.get(1) + 1) in the print statement.
+R1: Employee numbers now display correctly.

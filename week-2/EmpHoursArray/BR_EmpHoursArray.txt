@@ -1,0 +1,22 @@
+E: Displays each employee ordered by the number of hours they worked last week, based on a two-dimensional array.
+X: Second array used to store sums fails to read the calculated sum. (Array is full of null instead of numbers)
+
+S1: Change > to < in the for loop.
+R1: Now that the for loop can actually run, the second array stores the correct data.
+
+X: There is currently no way to align the total hours worked with the employee who worked them if the second array is reordered.
+
+S1: Change the second array into an array of strings, then add that to a multidimensional array that also contains employee names.
+R1: Sorting it turned into a headache.
+
+S2: Change the second array back into integers, import Arrays, and use Arrays.sort to sort it.
+R2: I did something wrong, and I can't figure out what the error means. I think it has something to do with the fact that I used a 2D array.
+
+S3: Change int to Integer in one place that I thought wasn't related at all, but actually turned out to be.
+R3: 1D arrays now sort, but 2D arrays still error.
+
+S4: Give up and copy/paste something from StackOverflow that I barely understand.
+R4: It worked after fixing it up a little, but the array was rearranged in ascending order instead of descending.
+
+S5: Import Collections to use Collections.reverse.
+S5: Console outputs employees by order of hours worked in descending order with the correct employee matching hours worked.
