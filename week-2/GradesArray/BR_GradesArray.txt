@@ -1,0 +1,2 @@
+E: Application prompts user to enter number of students and each student's score, then prints out the students' grades based on the highest score.
+X: N/A
