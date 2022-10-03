@@ -1,0 +1,11 @@
+E: Application displays all the recorded movies using the overridden toString() methods in their class files.
+X: Numbers over 10 million are displayed in scientific notation, which looks wrong when displaying money values.
+
+S1: Turn the doubles into Strings.
+R1: They're still in scientific notation.
+
+S2: Turn the doubles into Strings, then turn the Strings into Integers because no one tracks how many cents a movie made.
+R2: Java turned the notation into a String instead of the number, which meant that the number wasn't formatted correctly to turn into an int.
+
+S3: Use String.format("%.2f",x). (Used "%.0f" for TV movies because a decimal for an amount of people implies that some humans are less human than others.)
+R3: Monetary values no longer use scientific notation, and they display with only 2 decimal places (in case a movie actually does show the number of cents it made).
