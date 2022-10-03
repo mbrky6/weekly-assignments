@@ -1,0 +1,5 @@
+E: A program that prompts the user for 10 integers, then returns the largest integer of the 10.
+X: Max method runs prematurely, throwing an error in the process.
+
+S1: change (int i:gather) to (int i=0; i<gather.length; i++).
+R1: The program runs without issue.
