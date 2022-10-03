@@ -1,0 +1,17 @@
+E: A class that can store a date with Year, Month, and Day based on the number of milliseconds it has been since 01 Jan, 1970.
+X: Dates from millisecond amounts are not read.
+
+S1: Use calendar.get(GregorianCalendar.XXXX).
+R1: Program ignores the millisecond amount and uses the current date instead.
+
+S2: Use calendar.setTimeInMillis(elapsedTime).
+R1: It doesn't read that either.
+
+S3: Use both of those lines.
+R3: Program now reads millisecond dates correctly.
+
+E: setDate() method can set a MyDate's date to a certain time in milliseconds since 00:00:00.000 01 Jan, 1970.
+X: After a new date is set, the date does not change.
+
+S1: Add calendar.get(GregorianCalendar.XXXX) to the setDate() method.
+R1: Program now accepts changed dates.
