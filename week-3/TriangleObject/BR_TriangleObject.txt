@@ -1,0 +1,2 @@
+E: A webpage that contains a class to generate a triangle with either default or input sides, then do calculations with it.
+X: N/A
