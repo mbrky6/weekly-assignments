@@ -1,5 +1,0 @@
-E: A program that throws a custom exception when it receives a string that isn't a binary number.
-X: Main method can't find the error
-
-S1: Put "throws BinaryFormatException" after main(String[] args).
-R1: Problem solved.
