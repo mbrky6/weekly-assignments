@@ -1,5 +1,0 @@
-E: Rectangle class with a method that compares the areas of two rectangles to determine if they are equal.
-X: Bad class file Rectangle.sig (What?)
-
-S1: Change the package names in Rectangle.java and GeometricObject.java from "ComparableRectangle" to "comparablerectangle".
-R1: Problem solved.
