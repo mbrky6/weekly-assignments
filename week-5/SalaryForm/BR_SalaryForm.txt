@@ -1,0 +1,12 @@
+E: A JSP that reads data from 4 input boxes, then inserts that data into both a table and a MySQL database.
+X: Page doesn't upload data to the database.
+
+S1: change db.addData(...) to int result = db.addData(...).
+R1: Still no data. The table works fine, but that's only because it's not actually connected to the database.
+A1: After finding where the exception prints to, it seems the issue is that there's "no suitable driver" found.
+
+S2: Add JDBC connector to the classpath.
+R2: Field 'ID' doesn't have a default value (I forgot to set it to auto-increment)
+
+S3: Fix the ID column by modifying it to include AUTO_INCREMENT.
+R3: Database now accepts the input.
