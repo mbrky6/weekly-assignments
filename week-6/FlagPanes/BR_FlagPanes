@@ -1,0 +1,11 @@
+E: A simple window with 4 different flags on it
+X: It's throwing some sort of exception, probably because I gave a bad file path somewhere.
+
+S1: Upload the flag images to Imgur, then copy the links from there to save me the headache of trying to figure out where they go in Maven.
+R1: The window still won't open, meaning it's an issue with how I call the FXML file.
+
+S2: Add more imports to the FXML file.
+R2: It's still giving me an error. The only way I can see the stack trace is if I rerun Maven with the -e switch, but I don't even know what that means.
+
+S3: Realize NetBeans already pre-made an FXML file inside of Maven's endless mazework of folders, then restart the project from the beginning.
+R3: It turned out that all I needed to do was remove the rest of the file path from the FXMLLoader getClass, and leave only the name. Now it works perfectly.
