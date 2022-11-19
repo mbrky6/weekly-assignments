@@ -1,0 +1,23 @@
+E: GUI application that takes 3 parameters (initial investment, years, interest rate), and calculates a future value.
+X: Exception occurs while calculating.
+
+S1: Replace Integer.parseInt with Double.parseDouble in a place where I changed an integer to a double (Interest rate).
+R1: Calculation works, but the number isn't even close. It should output 11386.28, but instead outputs 1.4543490193466256E222.
+A1: I think I might have misunderstood the formula in the textbook
+
+S2: Change Math.pow(investment * (1 + rate), years * 12) to investment * Math.pow((1 + rate), years * 12).
+R2: Still way off from what it's supposed to be (1.4543490193466255E34), but it's closer now.
+A2: At this point, I know I can make the calculation, but I just have no idea what the textbook is trying to tell me the formula is.
+A2: I looked it up, and I have no idea why the author made the formula so confusing when I just have to multiply the 3 numbers together
+
+S3: Change investment * Math.pow((1 + rate), years * 12) to investment * (rate/100) * (years * 12).
+R3: It's still the wrong number (15600). I'm running out of ideas.
+
+S4: Change investment * (rate/100) * (years * 12) to investment * Math.pow((1 + rate/100), years * 12)
+R4: Now it's more off than it was before 46421.89829624566
+
+S5: Just go back to my S3 solution because it was the closest, and this is programming homework, not math homework.
+R5: Now it "works", but it it still looks hideous.
+
+S6: Change around the shape of the HBoxes and VBoxes to realign the Labels and TextFields, then adjust the size of the window to remove empty space.
+R6: Now the app looks a lot more respectable (at least from a textbook standpoint).
