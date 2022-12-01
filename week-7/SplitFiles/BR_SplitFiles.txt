@@ -1,0 +1,20 @@
+E: A GUI application that can split large files into a specified number of smaller files.
+X: It created two files with the correct names: the first one just had a @ symbol, and the second was blank.
+
+S1: Remove the close statement since I'm not sure where to actually put it, and it autocloses.
+R1: I think I know what's wrong with the method, but I'm not sure how to describe it.
+
+S2: Change the file writer from a FileOutputStream to a RandomAccessFile.
+R2: After reading the documentation more closely, it appears that the method I've been using to read the file actually returns an integer, not an array of bytes.
+
+S3: Change the method to a nested for loop that reads and writes one byte at a time.
+R3: It created 6 files and read from the data, but it reads the same part every time and the data is offset by 1.
+
+S4: Change large.seek(b) to large.seek(b * i - 1).
+R4: That causes an IOException.
+
+S5: Change large.seek(b * i - 1) to large.seek(b + increment * i).
+R5: The file splits correctly, but can't output data correctly if the file size isn't divisible by the split number.
+
+S6: Create another file after the last for whatever data is left, then use an if statement to break when the file ends.
+R6: It works now. The GUI is really ugly, but at least it works.
