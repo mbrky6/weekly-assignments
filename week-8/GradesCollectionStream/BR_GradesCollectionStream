@@ -1,0 +1,5 @@
+E: Same as GradesArray and GradesList, but using Streams.
+X: Due to the way I made the program check grades, it throws an ArrayIndexOutOfBoundsException.
+
+S1: Change (int i : scores) to (int i = 0; i < studentNum; i++).
+R1: Program runs fine now.
